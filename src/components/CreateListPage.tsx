@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
 import { useListCreation } from '../hooks/useListCreation';
-import ListContainer from '../components/ListContainer';
 import { AnimalItem } from '../types/atom';
 
 // Sample data from the image

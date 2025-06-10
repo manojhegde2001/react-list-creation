@@ -26,13 +26,6 @@ const CreateListPage: React.FC = () => {
     setAvailableItems(prev => prev.filter(i => i.id !== item.id));
   };
 
-  const handleRemoveItem = (id: string) => {
-    const itemToRemove = selectedItems.find(item => item.id === id);
-    if (itemToRemove) {
-      setSelectedItems(prev => prev.filter(item => item.id !== id));
-      setAvailableItems(prev => [...prev, itemToRemove]);
-    }
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
